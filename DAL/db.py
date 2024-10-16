@@ -1,5 +1,5 @@
 import mysql.connector
-from mysql.connector import errorcode
+from mysql.connector import Error
 
 try:
         cnx= mysql.connector.connect(
@@ -16,5 +16,5 @@ try:
             print(base)
         #cnx.closed
 
-except mysql.connector.Error:
+except Error:
       print("Ocurrió un error al conectar la base de datos")
